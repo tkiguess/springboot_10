@@ -5,11 +5,12 @@
     <title>Title</title>
 </head>
 <body>
-<a href="/">Show All Courses</a><br/>
-Title:<Span th:text="${course.title}"></Span><br/>
-Instructor:<Span th:text="${course.instructor}"></Span><br/>
-Description:<Span th:text="${course.description}"></Span><br/>
-Credits:<Span th:text="${course.Credits}"></Span><br/>
+
+<a href="/">Show All Courses</a><br />
+Title :<span th:text="${course.title}" ></span><br />
+Instructor :<span th:text="${course.instructor}" ></span><br />
+Description :<p th:text="${course.description}" ></p>
+Credits :<span th:text="${course.credit}" ></span><br />
 <a th:href="@{/delete/{id}(id=${course.id})}">Delete this course</a>
 </body>
 </html>
